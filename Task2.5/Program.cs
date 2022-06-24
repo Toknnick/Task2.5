@@ -15,7 +15,8 @@ namespace Task2._5
             float euroBalance = 90;
             double usdToRubles = 53;
             double euroToRubles = 56;
-            double euroToUsd = 1.06, usdToEuro = 0.94;
+            double euroToUsd = 1.06;
+            double usdToEuro = 0.94;
             double moneyToChange;
             double balanceAfterChange;
             int state;
@@ -26,11 +27,13 @@ namespace Task2._5
             do
             {
                 state = int.Parse(Console.ReadLine());
+                
                 switch (state)
                 {
                     case 1:
                         Console.WriteLine("Сколько рублей на доллары:");
                         moneyToChange = double.Parse(Console.ReadLine());
+                        
                         if (moneyToChange <= rubBalance)
                         {
                             balanceAfterChange = rubBalance - moneyToChange;
@@ -46,6 +49,7 @@ namespace Task2._5
                     case 2:
                         Console.WriteLine("Сколько рублей на евро:");
                         moneyToChange = double.Parse(Console.ReadLine());
+                        
                         if (moneyToChange <= rubBalance)
                         {
                             balanceAfterChange = rubBalance - moneyToChange;
@@ -61,6 +65,7 @@ namespace Task2._5
                     case 3:
                         Console.WriteLine("Сколько долларов на рубли:");
                         moneyToChange = double.Parse(Console.ReadLine());
+                        
                         if (moneyToChange <= usdBalance)
                         {
                             balanceAfterChange = usdBalance - moneyToChange;
@@ -76,6 +81,7 @@ namespace Task2._5
                     case 4:
                         Console.WriteLine("Сколько долларов на евро:");
                         moneyToChange = double.Parse(Console.ReadLine());
+                        
                         if (moneyToChange <= usdBalance)
                         {
                             balanceAfterChange = usdBalance - moneyToChange;
@@ -91,6 +97,7 @@ namespace Task2._5
                     case 5:
                         Console.WriteLine("Сколько евро на рубли:");
                         moneyToChange = double.Parse(Console.ReadLine());
+                        
                         if (moneyToChange <= euroBalance)
                         {
                             balanceAfterChange = euroBalance - moneyToChange;
@@ -106,6 +113,7 @@ namespace Task2._5
                     case 6:
                         Console.WriteLine("Сколько евро на доллары:");
                         moneyToChange = double.Parse(Console.ReadLine());
+                        
                         if (moneyToChange <= euroBalance)
                         {
                             balanceAfterChange = euroBalance - moneyToChange;
